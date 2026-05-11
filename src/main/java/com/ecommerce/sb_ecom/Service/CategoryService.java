@@ -8,5 +8,8 @@ import java.util.List;
 public interface CategoryService {
 
         List<Category> getCategories();
+        Category getCategoryById(long categoryId);
         void createCategory(Category category);
+        String updateCategory(long categoryId, Category category);
+        String deleteCategory(long categoryId);
 }
